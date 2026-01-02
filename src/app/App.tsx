@@ -14,7 +14,7 @@ import {
 export default function App() {
   const committeeMembers = [
     {
-      name: "Rajesh Kumar",
+      name: "Raja parar dada",
       role: "President",
       contact: "+91 98765 43210",
     },
