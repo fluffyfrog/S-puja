@@ -1,3 +1,4 @@
+import React from "react";
 import { MemberCard } from "./components/MemberCard";
 import { EventCard } from "./components/EventCard";
 import {
@@ -10,6 +11,7 @@ import {
   Palette,
   Hammer,
 } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   const committeeMembers = [
@@ -366,6 +368,7 @@ export default function App() {
           </div>
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
