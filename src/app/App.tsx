@@ -83,15 +83,15 @@ export default function App() {
     },
     {
       name: "Sayon Banerjee",
-      role: "Supervisors",
+      role: "Supervisor",
     },
     {
       name: "Roni Nandi",
-      role: "Supervisors",
+      role: "Supervisor",
     },
     {
       name: "Tanmay Sadhukhan",
-      role: "Supervisors",
+      role: "Supervisor",
     },
     {
       name: "Sayan Roy Choudhury",
