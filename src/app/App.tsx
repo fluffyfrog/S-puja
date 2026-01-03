@@ -16,68 +16,121 @@ import { Analytics } from "@vercel/analytics/react";
 export default function App() {
   const committeeMembers = [
     {
-      name: "Raja parar dada",
+      name: "Madan Mitra",
+      role: "Chairman",
+    },
+    {
+      name: "Amit Mitra",
       role: "President",
-      contact: "+91 98765 43210",
     },
     {
-      name: "Priya Sharma",
-      role: "Vice President",
-      contact: "+91 98765 43211",
+      name: "Debasish Bose",
+      role: "Working president",
     },
     {
-      name: "Amit Patel",
-      role: "Treasurer",
-      contact: "+91 98765 43212",
-    },
-    {
-      name: "Sunita Devi",
+      name: "Soumen Dutta Roy",
       role: "Secretary",
-      contact: "+91 98765 43213",
     },
     {
-      name: "Vikram Singh",
-      role: "Cultural Head",
-      contact: "+91 98765 43214",
+      name: "Shibayan Nandy",
+      role: "Joint - Secretary",
     },
     {
-      name: "Meera Reddy",
-      role: "Decoration Head",
-      contact: "+91 98765 43215",
+      name: "Abhijit Ghosh",
+      role: "Joint - Secretary",
     },
+    {
+      name: "Suvojit Chandra",
+      role: "Joint - Secretary",
+    },
+    {
+      name: "Krishanu Halder",
+      role: "Joint - Secretary",
+    },
+    {
+      name: "Bablu Singh & Papiya Singh",
+      role: "Chief guest",
+    },
+  ];
+
+  const organizingCommitteeMembers = [
+    {
+      name: "Debdeep Dutta",
+      role: "Organizing Committee",
+    },
+    {
+      name: "Debayan Chakraborty",
+      role: "Organizing Committee",
+    },
+    {
+      name: "Sudipta Sadhukhan",
+      role: "Organizing Committee",
+    },
+  ];
+
+  const leads = [
+    {
+      name: "Sreenjoy Kumar Dey",
+      role: "Social Media Head",
+    },
+    {
+      name: "Aditya Chatterjee",
+      role: "Creative Head",
+    },
+    {
+      name: "Aryan Nandan",
+      role: "Fund Manager",
+    },
+    {
+      name: "Sayon Banerjee",
+      role: "Supervisors",
+    },
+    {
+      name: "Roni Nandi",
+      role: "Supervisors",
+    },
+    {
+      name: "Sayan Roy Choudhury",
+      role: "Event management head (puja)",
+    },
+    {
+      name: "Akshit Chandra",
+      role: "Event management head (puja)",
+    },
+    {
+      name: "Chirag Agarwal",
+      role: "Event management head (puja)",
+    },
+    {
+      name: "Ramik Mukherjee",
+      role: "Technical Head",
+    },
+    {
+      name: "Sourab Chakraborty",
+      role: "Bhog Commitee Head",
+    }
   ];
 
   const events = [
     {
       day: "Day 1",
-      date: "Jan 21",
-      time: "6:00 AM - 9:00 PM",
-      title: "Ribbon cutting ceremony",
-      description:
-        "Installation of the idol with traditional rituals and prayers. The beginning of our sacred celebration.",
+      date: "Jan 22",
+      title: "Inauguration ceremony of Saraswati Puja 2026"
     },
     {
       day: "Day 2",
-      date: "Jan 22",
-      time: "7:00 AM - 10:00 PM",
-      title: "Grand puja day",
-      description:
-        "Special puja ceremonies throughout the day, in the evening featuring music.",
+      date: "Jan 23",
+      title: "Puja",
     },
     {
       day: "Day 3",
-      date: "Jan 23",
-      time: "6:00 AM - 11:00 PM",
+      date: "Jan 24",
       title: "Bhog Distribution",
-      description:
-        "Distributing bhog throughout the neighbourhood.",
     },
     {
       day: "Day 4",
-      date: "Jan 24",
-      time: "6:00 AM - 11:00 PM",
-      title: "Idol immersion",
-      description: "Grand idol immersion with dance and dhak.",
+      date: "Jan 25",
+      title: "Grand Immersion"
     },
   ];
 
@@ -87,7 +140,7 @@ export default function App() {
       <div
         className="fixed inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://cdn.discordapp.com/attachments/701515904575340624/1456586331571491043/Picsart_26-01-02_15-23-15-772.png?ex=6958e73b&is=695795bb&hm=e789d42fb1c856bb161cb08eaadb8cad367b675b0ac9ab75fbda85656b039140&')`,
+          backgroundImage: `url('https://finzmetadata.s3.ap-south-1.amazonaws.com/bgimage.png')`,
         }}
       />
 
@@ -111,7 +164,7 @@ export default function App() {
               Community Celebration
             </p>
             <p className="text-lg opacity-90">
-              January 21 - January 24, 2026
+              January 22 - January 25, 2026
             </p>
           </div>
         </div>
@@ -119,7 +172,7 @@ export default function App() {
         {/* Social Media Links */}
         <div className="flex items-center justify-center gap-6 py-8">
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/share/1QHZucPFSy/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/90 hover:bg-blue-600 hover:text-white p-4 rounded-full shadow-lg transition-all hover:scale-110 text-gray-700"
@@ -128,7 +181,7 @@ export default function App() {
             <Facebook className="w-10 h-10" />
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/turf_road?igsh=eXhpdjZ6c2RsaWd2"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/90 hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-600 hover:to-orange-500 hover:text-white p-4 rounded-full shadow-lg transition-all hover:scale-110 text-gray-700"
@@ -137,6 +190,7 @@ export default function App() {
             <Instagram className="w-10 h-10" />
           </a>
         </div>
+        
 
         {/* Main Content Container */}
         <div className="max-w-6xl mx-auto px-4 py-12 space-y-16">
@@ -148,32 +202,23 @@ export default function App() {
             </div>
             <div className="space-y-4 text-gray-700">
               <p>
-                This year's Saraswati Puja celebration embraces
-                the theme of{" "}
+              This year’s Saraswati Puja celebration embraces the theme of{" "}
                 <strong className="text-orange-800">
-                  "Divine Wisdom and Knowledge"
+                  "Let the Cute Light of Knowledge Bloom Even in Little Minds."
                 </strong>
-                , honoring Goddess Saraswati as the embodiment
-                of learning, arts, and enlightenment. Our pandal
-                design reflects the sacred connection between
-                spirituality and education.
+                , A child’s mind is filled with curiosity, innocence, and a natural desire to learn—these are the seeds from which the first light of knowledge emerges.
               </p>
               <p>
-                The decorative theme features traditional
-                elements of books, veenas (musical instruments),
-                and white lotus flowers symbolizing purity and
-                wisdom. The color palette combines pristine
-                whites, soft yellows, and vibrant oranges to
-                create an atmosphere of serenity and devotion.
+              In today’s world, where education is often burdened by pressure, competition, and excessive dependence on technology, children sometimes lose the joy of learning. Through this theme, we wish to convey that knowledge is not a burden but a joyful journey that grows through play, imagination, and curiosity. In small hands holding books and pens, in eyes filled with dreams and minds full of questions, lies the gentle glow of future wisdom.
               </p>
               <p>
-                Our artisans have incorporated intricate Bengali
-                alpana (traditional floor art) designs
-                throughout the celebration space, depicting
-                symbols of knowledge and prosperity. The
-                lighting design uses soft white and amber hues
-                to create a peaceful ambiance that invites
-                contemplation and prayer.
+              Here, Goddess Saraswati is not only the goddess of learning but also a compassionate guide for children—one who ignites the light of knowledge with love, care, and joy. The decorations, colors, and symbolic elements of the pandal reflect childlike simplicity and softness, allowing every visitor to reconnect, even briefly, with their own childhood.
+              </p>
+              <p>
+              Through this Saraswati Puja, we pray—
+              May every little mind be illuminated by the light of knowledge,
+              May learning be joyful,
+              And may the future be enlightened with humanity and wisdom.
               </p>
             </div>
           </section>
@@ -187,47 +232,12 @@ export default function App() {
             <div className="space-y-4 text-gray-700">
               <p>
                 <strong className="text-orange-800">
-                  Master Artisan: Shri Kartik Pal
+                  Shri Dipankar Paul
                 </strong>
               </p>
               <p>
-                For the past 15 years, we have been honored to
-                work with renowned idol maker{" "}
-                <strong>Shri Kartik Pal</strong> from Kumartuli,
-                Kolkata - the legendary artist quarter famous
-                for its clay idol craftsmanship. With over 30
-                years of experience, Shri Pal represents the
-                third generation of master sculptors in his
-                family.
+              Dipankar Paul is a prominent artist and sculptor from Kumortuli, Kolkata, known for his innovative approach to traditional idol-making. He gained widespread attention for creating a viral “cutest” idol, which introduced a fresh, charming aesthetic to Kolkata’s Puja culture. Alongside this trend, his creations often reflect contemporary social and current events, blending tradition with modern expression. Through his unique artistic vision, Dipankar Paul has contributed to redefining idol aesthetics while staying rooted in the rich heritage of Kumortuli craftsmanship
               </p>
-              <p>
-                His exquisite craftsmanship brings Goddess
-                Saraswati to life with intricate details - from
-                the delicate features of her serene face to the
-                ornate decorations on her white saree. Each idol
-                is handcrafted using traditional methods,
-                utilizing eco-friendly clay, natural dyes, and
-                sustainable materials that honor both artistry
-                and our environment.
-              </p>
-              <p>
-                Shri Pal begins working on our idol three months
-                before the celebration, meticulously sculpting
-                every detail with devotion and precision. His
-                work has been featured in numerous cultural
-                exhibitions and has won several awards for
-                traditional Bengali idol-making artistry.
-              </p>
-              <div className="mt-6 p-6 bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg border-l-4 border-orange-600">
-                <p className="text-gray-700">
-                  <strong className="text-orange-800">
-                    Contact the Artist:
-                  </strong>{" "}
-                  For inquiries about custom idol commissions or
-                  to appreciate the craftsmanship, please
-                  contact through our organizing committee.
-                </p>
-              </div>
             </div>
           </section>
 
@@ -236,11 +246,42 @@ export default function App() {
             <div className="flex items-center gap-3 mb-8">
               <Users className="w-8 h-8 text-orange-600" />
               <h2 className="text-orange-800">
-                Organizing Committee
+                Personage
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {committeeMembers.map((member, index) => (
+                <MemberCard key={index} {...member} />
+              ))}
+            </div>
+          </section>
+
+          <div className="flex items-center justify-center gap-6 py-8">
+            <h1 className="text-orange-800 text-2xl font-bold text-center md:text-5xl">Now to the Workforce</h1>
+        </div>
+        <section className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-8 md:p-12 border-t-4 border-orange-500">
+            <div className="flex items-center gap-3 mb-8 justify-center">
+              <h2 className="text-orange-800 text-lg font-bold text-center md:text-3xl">
+                Made possible with
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {organizingCommitteeMembers.map((member, index) => (
+                <MemberCard key={index} {...member} />
+              ))}
+            </div>
+            
+          </section>
+
+          <section className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-8 md:p-12 border-t-4 border-orange-500">
+            <div className="flex items-center gap-3 mb-8">
+              <Users className="w-8 h-8 text-orange-600" />
+              <h2 className="text-orange-800">
+                Leads
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {leads.map((member, index) => (
                 <MemberCard key={index} {...member} />
               ))}
             </div>
@@ -249,14 +290,13 @@ export default function App() {
                 <strong className="text-orange-800">
                   Venue:
                 </strong>{" "}
-                Community Cultural Center, 123 Main Street, New
-                Delhi
+                24 Turf Road, Bhowanipore, Kolkata - 700025
               </p>
               <p className="text-gray-700">
                 <strong className="text-orange-800">
                   For inquiries:
                 </strong>{" "}
-                contact@durgapuja2024.org
+                 8777362900
               </p>
             </div>
           </section>
@@ -313,43 +353,16 @@ export default function App() {
             </div>
             <div className="space-y-4 text-gray-700">
               <p>
-                Durga Puja is one of the most significant
-                festivals in Hindu culture, celebrating the
-                victory of Goddess Durga over the demon
-                Mahishasura, symbolizing the triumph of good
-                over evil. This ten-day festival honors the
-                divine feminine energy and brings communities
-                together in devotion, joy, and celebration.
+              Our Puja Journey: From Little Steps to Big Dreams
               </p>
               <p>
-                Our community has been celebrating Durga Puja
-                for over 25 years, bringing together families
-                from all backgrounds to experience the spiritual
-                richness and cultural vibrancy of this sacred
-                festival. What started as a small gathering of
-                20 families in 1999 has grown into a grand
-                celebration attended by over 500 devotees
-                annually.
+              Our Saraswati Puja journey began in 2021 with a small yet sincere effort and a big dream. With limited resources but unlimited passion, we took our first step into organising Saraswati Puja by introducing a creative and eco-conscious theme made entirely from plastic spoons. What seemed like a simple material became a powerful symbol of innovation, teamwork, and determination.
               </p>
               <p>
-                Each year, we handcraft a magnificent idol of
-                Goddess Durga with her children - Lakshmi,
-                Saraswati, Ganesh, and Kartikeya. Our artisans
-                spend months creating intricate designs that
-                honor traditional Bengali craftsmanship while
-                incorporating modern artistic elements. The
-                pandal (temporary structure) is decorated with
-                thousands of lights, flowers, and traditional
-                motifs creating a divine ambiance.
+              Over the years, each celebration has marked a new milestone. From a modest setup to more structured planning, stronger coordination, and richer thematic concepts, our journey has been one of continuous learning and growth. Every year, we have aimed to improve—not just in scale, but in creativity, responsibility, and community involvement.
               </p>
               <p>
-                Beyond the religious ceremonies, our celebration
-                includes cultural programs featuring classical
-                dance performances, devotional music,
-                traditional Bengali cuisine, and children's
-                activities. This festival is a time for renewal,
-                community bonding, and passing our rich heritage
-                to the next generation.
+              What started as a small initiative has now evolved into a confident stride toward bigger visions. Each Puja reflects our collective effort, dedication, and the belief that even little steps can lead to meaningful transformations. As we move forward, we remain rooted in our values while embracing new ideas and bigger dreams.
               </p>
             </div>
           </section>
@@ -366,6 +379,20 @@ export default function App() {
               </p>
             </div>
           </div>
+          <div className="flex items-center justify-center gap-6 py-2">
+            <h1 className="text-orange-800 text-lg font-bold text-center md:text-2xl">Support Us by donating</h1>
+        </div>
+        <div className="flex items-center justify-center gap-2 rounded-lg">
+          <a
+            href="upi://pay?pa=roysayan031@oksbi&pn=SAYAN'S%20OFFICIAL&aid=uGICAgID3-IurAw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/90 hover:bg-blue-600 hover:text-white rounded-lg shadow-lg transition-all hover:scale-110 text-gray-700"
+            aria-label="UPI"
+          >
+            <img src="https://telecomtalk.info/wp-content/uploads/2022/12/gpay-how-to-create-or-find-upi.jpg" alt="UPI" className="w-35 h-30 rounded-lg" />
+          </a>
+        </div>
         </div>
       </div>
       <Analytics />
