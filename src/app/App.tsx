@@ -90,6 +90,10 @@ export default function App() {
       role: "Supervisors",
     },
     {
+      name: "Tanmay Sadhukhan",
+      role: "Supervisors",
+    },
+    {
       name: "Sayan Roy Choudhury",
       role: "Event management head (puja)",
     },
