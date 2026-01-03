@@ -172,7 +172,7 @@ export default function App() {
         {/* Social Media Links */}
         <div className="flex items-center justify-center gap-6 py-8">
           <a
-            href="https://www.facebook.com/share/1QHZucPFSy/"
+            href="https://www.facebook.com/trtp.sd"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/90 hover:bg-blue-600 hover:text-white p-4 rounded-full shadow-lg transition-all hover:scale-110 text-gray-700"
