@@ -25,27 +25,27 @@ export default function App() {
     },
     {
       name: "Debasish Bose",
-      role: "Working president",
-    },
-    {
-      name: "Soumen Dutta Roy",
       role: "Secretary",
     },
     {
+      name: "Soumen Dutta Roy",
+      role: "Working president",
+    },
+    {
       name: "Shibayan Nandy",
-      role: "Joint - Secretary",
+      role: "Convenor",
     },
     {
       name: "Abhijit Ghosh",
-      role: "Joint - Secretary",
+      role: "Convenor",
     },
     {
       name: "Suvojit Chandra",
-      role: "Joint - Secretary",
+      role: "Convenor",
     },
     {
       name: "Krishanu Halder",
-      role: "Joint - Secretary",
+      role: "Convenor",
     },
     {
       name: "Bablu Singh & Papiya Singh",
