@@ -387,15 +387,7 @@ export default function App() {
             <h1 className="text-orange-800 text-lg font-bold text-center md:text-2xl">Support Us by donating</h1>
         </div>
         <div className="flex items-center justify-center gap-2 rounded-lg">
-          <a
-            href="upi://pay?pa=roysayan031@oksbi&pn=SAYAN'S%20OFFICIAL&aid=uGICAgID3-IurAw"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white/90 hover:bg-blue-600 hover:text-white rounded-lg shadow-lg transition-all hover:scale-110 text-gray-700"
-            aria-label="UPI"
-          >
-            <img src="https://telecomtalk.info/wp-content/uploads/2022/12/gpay-how-to-create-or-find-upi.jpg" alt="UPI" className="w-35 h-30 rounded-lg" />
-          </a>
+            <img src="https://finzmetadata.s3.ap-south-1.amazonaws.com/Screenshot+from+2026-01-08+01-37-04.png" alt="UPI" className="w-50 h-50 rounded-lg" />
         </div>
         </div>
       </div>
